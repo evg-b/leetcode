@@ -4,45 +4,6 @@
 //   Открытые скобки должны закрываться скобками того же типа.
 //   Открытые скобки должны быть закрыты в правильном порядке.
 
-// function isValid(s: string): boolean {
-//     if (s.length < 2) {
-//         return false
-//     }
-//     console.log('start s:', s)
-//     let [a, b, c] = [0, 0, 0]
-//     let UnExpected = new Map([['(', ']}'], ['{', ')]'], ['[', ')}']])
-//     for (let i = 0; i < s.length; i++) {
-//         if (UnExpected.get(s[i - 1])?.includes(s[i])) {
-//             return false
-//         }
-//         switch (s[i]) {
-//             case '(':
-//                 a++
-//                 break
-//             case ')':
-//                 a = a > 0 ? a - 1 : a + 2
-//                 break
-//             case '{':
-//                 b++
-//                 break
-//             case '}':
-//                 b = b > 0 ? b - 1 : b + 2
-//                 break
-//             case '[':
-//                 c++
-//                 break
-//             case ']':
-//                 c = c > 0 ? c - 1 : c + 2
-//                 break
-//         }
-//     }
-//     console.log('a, b, c:', a, b, c)
-//     if (Math.abs(a) + Math.abs(b) + Math.abs(c) === 0) {
-//         return true
-//     } else {
-//         return false
-//     }
-// };
 function isValid(s: string): boolean {
     console.log('start s:', s)
     let Expected = '({['
